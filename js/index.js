@@ -1,10 +1,10 @@
 (function(d, $){
 	window.onload = function(){
-		var nav = navigator.userAgent.toLowerCase();
+/*		var nav = navigator.userAgent.toLowerCase();
 		var isiOS = /iphone|ipad|ipod/.test(nav)
-		isiOS?toShow():$('#music')[0].addEventListener('canplaythrough', toShow, false);
+		isiOS?toShow():$('#music')[0].addEventListener('canplaythrough', toShow, false);*/
 		
-		function toShow(){
+		//function toShow(){
 			$('.tops').hide();
 			$('#music-c').addClass('rotates');
 			audioAutoPlay('music'); 
@@ -67,7 +67,7 @@
 				$('.iphone').show().addClass('bounceInRight');
 				moves();
 			})							
-		}
+		//}
 		$('#music-c').on('tap', function(){
 			var music = $('#music')[0] ;
 			if(music.paused){
